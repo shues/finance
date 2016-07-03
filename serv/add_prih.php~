@@ -1,0 +1,11 @@
+<?php
+	require_once('base.php');	
+	$db = dbconn();
+	if(!$db) {
+		return;
+	}
+	mysqli_query($db,'SET NAMES utf8');
+	
+	$dat=$_GET['dat'];
+	$sum=$_GET['sum'];
+?>
